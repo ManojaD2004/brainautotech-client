@@ -1,0 +1,14 @@
+version: "2.24.5"
+services:
+  frontend-dev:
+    build:
+      context: ../Docker
+      dockerfile: Dockerfile.dev
+    image: frontend-dev-image-v3
+    ports:
+      - 3000:3000
+    volumes:
+      - type: bind
+        source: .\nanosoft-app
+        target: /frontend-dev
+    

@@ -1,0 +1,35 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/brainautotech/public_html
+    - /bin/cp ./compiled-prod-code/404.html $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/Textonly.png $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/braintechlogo.PNG $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/favicon.ico $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/icon.ico $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/index.html $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/index.txt $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/next.svg $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/sidelogoplustext.PNG $DEPLOYPATH
+    - /bin/cp ./compiled-prod-code/vercel.svg $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/404 $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/_next $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/about $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/algo $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/algo-services $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/api-bridge $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/auto $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/contact $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/disclaimer $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/image $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/it-services $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/iws-section $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/payment $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/pcs-images $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/popup $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/pricing $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/privacy $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/refund $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/sls-images $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/strategy $DEPLOYPATH
+    - /bin/cp -R ./compiled-prod-code/terms $DEPLOYPATH

@@ -1,0 +1,11 @@
+# Use the official Apache image as base
+FROM httpd:latest
+
+# Copy your static files into the Apache DocumentRoot directory
+COPY ./compiled-prod-code /usr/local/apache2/htdocs/
+
+# Set ServerName directive to suppress warning messages
+RUN echo "ServerName localhost" >> /usr/local/apache2/conf/httpd.conf
+
+# Expose port 80
+EXPOSE 80
